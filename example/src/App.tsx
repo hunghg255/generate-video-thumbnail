@@ -10,7 +10,7 @@ function App() {
   const refInput = useRef<ElementRef<'input'>>(null);
   const refInputUrl = useRef<ElementRef<'input'>>(null);
   const [thumbs, setThumbs] = useState<string[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [, setIsLoading] = useState(false);
 
   const onSelectFile = (e: any) => {
     if (!e.target.files || e.target.files.length === 0) {
